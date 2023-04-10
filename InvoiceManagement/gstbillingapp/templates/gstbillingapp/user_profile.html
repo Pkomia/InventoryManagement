@@ -1,0 +1,83 @@
+{% extends "gstbillingapp/base.html" %}
+
+{% load static %}
+
+
+
+{% block content %}
+<div class="text-center">
+	<h1>Business Profile Details</h1>
+</div>
+<div class="row">
+	<div class="col-lg-4">
+		<div class="card mb-4">
+			<div class="card-body text-center">
+				<img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
+					class="rounded-circle img-fluid" style="width: 150px;">
+				<h5 class="my-3">{{user_profile.business_title}}</h5>
+				<!-- <p class="text-muted mb-1">Full Stack Developer</p> -->
+				<p class="text-muted mb-4">{{user_profile.business_address}}</p>
+				<div class="col">
+					<a href="{% url 'user_profile_edit' %}" id="user_profile_edit_btn"><button type="button"
+							class="btn btn-primary">Edit Profile</button></a>
+				</div>
+			</div>
+			<div class="card-body">
+				<div class="row">
+					<div class="col-sm-3">
+						<p class="mb-0">Business Name:</p>
+					</div>
+					<div class="col-sm-9">
+						<p class="text-muted mb-0">{{user_profile.business_title}}</p>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-sm-3">
+						<p class="mb-0">Email</p>
+					</div>
+					<div class="col-sm-9">
+						<p class="text-muted mb-0">{{user_profile.business_email}}</p>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-sm-3">
+						<p class="mb-0">Mobile</p>
+					</div>
+					<div class="col-sm-9">
+						<p class="text-muted mb-0">{{user_profile.business_phone}}</p>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-sm-3">
+						<p class="mb-0">GST</p>
+					</div>
+					<div class="col-sm-9">
+						<p class="text-muted mb-0">{{user_profile.business_gst}}</p>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-sm-3">
+						<p class="mb-0">Address</p>
+					</div>
+					<div class="col-sm-9">
+						<p class="text-muted mb-0">{{user_profile.business_address}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6 ml-10">
+     <div class="text-center"><h3>About Us <hr></h3></div>
+	 <div class="about">
+		<p style="text-align: justify;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis saepe temporibus vero libero minus,    aperiam accusantium esse pariatur accusamus praesentium? Provident error eos reprehenderit quaerat suscipit ipsum aspernatur perferendis laborum natus vero ad voluptatem in molestiae sequi deserunt similique exercitationem nemo enim odit, officiis repellat harum. Corrupti tenetur asperiores soluta harum debitis   tenetur assumenda odit neque blanditiis laudantium quo magnam! Recusandae dignissimos sint magni, culpa pariatur quod, facere perspiciatis quia autem eligendi omnis atque nihil mollitia debitis eum aliquam quam ad nostrum aut et laborum quidem. Corrupti similique culpa beatae repellendus laborum consequatur quis! Illo ut voluptatibus voluptas deleniti. Facere, minus, maiores provident dolorem, impedit mollitia neque quos veritatis delectus quasi doloribus? Debitis, cum sequi quasi nesciunt illo nemo! Dolorum repudiandae possimus nihil commodi fuga, cupiditate eligendi accusamus eveniet distinctio debitis exercitationem sed eum molestiae non porro provident? Ad illo vitae rerum molestias atque aliquid consectetur quas culpa commodi placeat quia id minima dolore magnam at quam, voluptatum odit reiciendis quidem enim non adipisci. Quasi perspiciatis aperiam provident omnis, obcaecati repudiandae odio! Facilis blanditiis voluptatem nihil mollitia aliquid ducimus ipsam nobis, nulla explicabo quibusdam facere distinctio, error repellat! Quas quos, porro aspernatur pariatur labore maiores vel nihil eveniet suscipit! Expedita, blanditiis facilis.</p>
+	 </div>
+
+	</div>
+</div>
+
+{% endblock %}

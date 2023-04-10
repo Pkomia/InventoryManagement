@@ -1,0 +1,4 @@
+Django==4.1.5
+num2words==0.5.12
+social-auth-app-django==5.1.0
+uwsgi==2.0.18
